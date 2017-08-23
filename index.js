@@ -64,13 +64,14 @@ module.exports = function(o, n, opts, callback) {
     opts = {};
   }
   opts = xtend({
-    stream: true,
+    stream: false,
     shallowArrays: false
   }, opts || {});
   
   if(!opts.stream) {
     return diff(o, n, opts, callback);
   } else {
+    throw new Error("streaming mode not implemented");
     return from.obj(function(size, next) {
       diff(o, n, opts, function(change) {
         // TODO 

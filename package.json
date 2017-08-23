@@ -1,11 +1,11 @@
 {
-  "name": "streaming-diff",
+  "name": "state-diff",
   "version": "0.0.1",
   "description": "Given two objects this module outputs a stream of paths to all changed properties",
-  "homepage": "http://github.com/biobricks/streaming-diff",
+  "homepage": "http://github.com/biobricks/state-diff",
   "repository": {
     "type": "git",
-    "url": "git://github.com/biobricks/streaming-diff.git"
+    "url": "git://github.com/biobricks/state-diff.git"
   },
   "dependencies": {
     "from2": "^2.3.0",
@@ -17,7 +17,7 @@
   },
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/biobricks/streaming-diff/issues"
+    "url": "https://github.com/biobricks/state-diff/issues"
   },
   "scripts": {
     "test": "node_modules/.bin/tape tests/*.js"
