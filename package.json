@@ -1,0 +1,28 @@
+{
+  "name": "streaming-diff",
+  "version": "0.0.1",
+  "description": "Given two objects this module outputs a stream of paths to all changed properties",
+  "homepage": "http://github.com/biobricks/streaming-diff",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/biobricks/streaming-diff.git"
+  },
+  "dependencies": {
+    "from2": "^2.3.0",
+    "xtend": "^4.0.1"
+  },
+  "author": {
+    "name": "Marc Juul",
+    "email": "npm@juul.io"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/biobricks/streaming-diff/issues"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/tape tests/*.js"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
