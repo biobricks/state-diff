@@ -1,6 +1,6 @@
 {
   "name": "state-diff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Given two objects this module outputs a stream of paths to all changed properties",
   "homepage": "http://github.com/biobricks/state-diff",
   "repository": {
@@ -24,5 +24,6 @@
   },
   "devDependencies": {
     "tape": "^4.6.3"
-  }
+  },
+  "license": "AGPL-3.0"
 }
