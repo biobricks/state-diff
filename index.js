@@ -63,7 +63,7 @@ module.exports = function(o, n, opts, callback) {
     callback = opts;
     opts = {};
   }
-  opts = xtend({
+  opts = extend({
     stream: false,
     shallowArrays: false
   }, opts || {});
