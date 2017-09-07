@@ -11,7 +11,7 @@ Streaming mode is not yet working in a properly async fashion so your process wi
 
 Modern browsers have the [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) object which is great for watching for state changes. Older firefox browsers have [Object.observe](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe) which could also be used but is now obsolete.
 
-The problem is that `Proxy` only works for very modern browsers and a shim using is impossible for most browsers without resorting to polling.
+The problem is that `Proxy` only works for very modern browsers and a shim is impossible for most browsers without resorting to polling.
 
 The other way to check for object changes is to dynamically re-build the object with every property replaced with setters and getters using `Object.defineProperty({set: <function>, get: <function>})`. This is the method used by [mobx](https://github.com/mobxjs/mobx) under the hood. 
 
