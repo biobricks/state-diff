@@ -1,8 +1,12 @@
 var extend = require('xtend');
-var from = require('from2');
+//var from = require('from2');
 
 var empty = {};
 
+
+// TODO 
+// add process.nextTick to make this a good async citizen
+// or maybe we actually want it to be sync
 function diff(o, n, opts, callback, path) {
   if(typeof opts === 'function') {
     callback = opts;
@@ -72,12 +76,14 @@ module.exports = function(o, n, opts, callback) {
     return diff(o, n, opts, callback);
   } else {
     throw new Error("streaming mode not implemented");
+/*
     return from.obj(function(size, next) {
       diff(o, n, opts, function(change) {
         // TODO 
         
       });
     });
+*/
   }
 
 
