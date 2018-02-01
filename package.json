@@ -1,6 +1,6 @@
 {
   "name": "state-diff",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Given two objects this module outputs a stream of paths to all changed properties",
   "homepage": "http://github.com/biobricks/state-diff",
   "repository": {

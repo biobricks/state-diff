@@ -8,6 +8,8 @@ var empty = {};
 // add process.nextTick to make this a good async citizen
 // or maybe we actually want it to be sync
 function diff(o, n, opts, callback, path) {
+  if(!o) o = {};
+  if(!n) n = {};
   if(typeof opts === 'function') {
     callback = opts;
     opts = {};
